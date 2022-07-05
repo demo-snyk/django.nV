@@ -1,8 +1,8 @@
-FROM python:3.7-alpine
+FROM python
 
 WORKDIR /src
 
-COPY --chown=${USER}:${USER} ./ /src
+COPY ./ /src
 
 RUN pip install -r requirements.txt
 
